@@ -1,0 +1,20 @@
+제작 방식: 내장 imagegen 도구로 사용자 첨부 대시보드 화면에 단계 번호 및 사각형 강조 추가
+최종 프롬프트:
+Use case: precise-object-edit / screenshot annotation.
+Edit target: the user's latest attached actual CEREBRO ETL dashboard screenshot, 1920x1080.
+Task: add four numbered rectangular highlight overlays to illustrate a user manual's four steps. Preserve the underlying screenshot exactly: no redesign, no changes to any Korean labels, values, dates, charts, navigation, icons, or dimensions. Only overlay crisp high-contrast thin rounded rectangular outlines and colored numbered badges. No new page UI, no blur, no arrows, no cropped-out regions. Keep all screenshot content readable and unobscured.
+
+Guide steps to illustrate:
+1. top navigation "대시보드" menu
+2. date selection controls at upper right
+3. the CDC, ETL and Workflow summary metrics/processing results
+4. the "로그 →" buttons to access detailed results.
+
+Exact annotations based on the 1920x1080 reference coordinates:
+STEP 1: A red rounded rectangle tightly around the TOP navigation dashboard item, approx x=196..285, y=7..54. Add a filled red badge with white bold "1" just outside its upper-left side, without covering the brand or menu word.
+STEP 2: An orange rounded rectangle around the date toolbar at upper right, approx x=1442..1884, y=76..116, encompassing 당일/전일, both dates and the 검색 button. Add orange badge "2" near its left/top edge without covering date text or notification pills. Do not include the risk/warning/info notification chips to its left.
+STEP 3: One blue rounded rectangular outline enclosing the CONTENTS of all THREE summary cards together, approx x=25..1575, y=133..319. This includes their CDC, ETL, Workflow titles, big processing/success values and the status tiles. Its BOTTOM EDGE must stop above the footer logs, separating this from step 4. Add a single blue badge "3" outside the upper-left corner near x=27,y=119, avoiding the page heading. This is a grouped processing-result highlight, not the charts and not CPU/memory on the right.
+STEP 4: Green rounded rectangular outlines around each of the THREE existing "로그 →" footer buttons: approximately x=455..518,y=326..356 (CDC), x=975..1037,y=326..356 (ETL), and x=1495..1558,y=326..356 (Workflow). Put the SAME green step badge "4" just beside each highlighted log button. Repeating 4 marks the equivalent buttons in three cards. Keep the word 로그 and the nearby failure buttons readable; do not mark "실패 4건" as a log button. The step-4 badges can sit slightly under or outside the buttons in the gutter if needed.
+
+Typography of badges: clear bold Arabic digits 1,2,3,4, about 22px high on small opaque circular or rounded-square colored background with white digit. Rectangle stroke around 3px at native screenshot size. Minimal very faint transparent highlight fill if useful, but do not dim the screenshot. Leave the lower ETL/CDC charts and right system-resource cards unannotated.
+Deliver a single polished instructional PNG retaining the full original landscape screenshot and precise UI text.

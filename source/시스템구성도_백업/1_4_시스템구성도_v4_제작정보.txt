@@ -1,0 +1,30 @@
+제작 방식: 내장 imagegen 도구로 v3 PNG의 배치 및 Platform 헤더 색상 편집
+최종 프롬프트:
+Edit the provided CEREBRO ETL architecture image to improve the visual data flow and recolor the Platform header. This is a precise layout/style revision, not a content rewrite. Preserve every existing Korean and English label and all previously approved content, icons, card grouping, thin outer outlines and thicker processing-group outline. Keep the same high-quality white/light-gray UI infographic aesthetic and crisp readable Korean. Retain landscape format.
+
+PRIMARY LAYOUT CHANGE:
+Make the actual data flow unmistakably LEFT TO RIGHT:
+[데이터 소스] → [one grouped 워크플로우 + CDC + ETL processing block] → [적재 · 보관 대상].
+In the current image the left arrow incorrectly originates at the 사용자 · 접속 환경 card. Fix this by repositioning panels and arrows:
+- Keep 사용자 · 접속 환경 as a separate compact card in the upper-left, alongside the upper platform/dashboard region. Preserve its two roles/captions and WEB CONSOLE/browser access text; compact/reflow with smaller line icons as needed, but readable and without omission.
+- Place 데이터 소스 directly to the LEFT of the thick outlined 워크플로우/CDC/ETL group, vertically centered on that processing group's middle horizontal axis. Its thin outlined outer card should be about the same vertical span as the processing group. Arrange its four items DB, 로그 · 파일, HTTP, 비정형 compactly but preserve their captions.
+- Place 적재 · 보관 대상 directly to the RIGHT of the SAME processing group, vertically centered on the same horizontal axis, with its thin outlined outer card about the same vertical span as the processing group. Keep 타깃 DB and 파일 저장소 and their existing captions.
+- There are exactly TWO arrows, both on the SAME single horizontal centerline: one starts at the right boundary of the DATA SOURCE card and ends exactly at the left edge of the THICK processing-group border; one starts at the right edge of the THICK processing-group border and ends at the left boundary of the destination card. These straight horizontal arrows must be outside the content cards, connect the thick group itself, and must not originate at the user card or point to the dashboard. Provide adequate horizontal gutters and spacing. Across the platform's thin outer frame is okay, but the arrowheads must reach the thick inner processing-group frame. Keep clean clear visible endpoints, avoid overlap with words/icons.
+- Keep the platform large in the center. Inside it, dashboard at top, the thick grouped workflow/CDC/ETL block in middle, and AI assistant plus settings below the group. Workflow remains above the side-by-side CDC/ETL cards, inside the same single thick teal rounded outline. No internal arrows. No new group title.
+- Reflow/adjust panel heights and margins enough for a balanced composition. Do not retain the old large user card in the data-source position.
+
+HEADER COLOR CHANGE:
+The prominent header strip containing the white stacked-layer icon and white exact title "CEREBRO ETL Platform" must change from teal-blue to a tasteful RED FAMILY design: deep burgundy at left blending softly into warm crimson/ruby at right, subtle layered tonal red wave shapes for the existing abstract background motif. Sophisticated restrained gradient, white text very legible. Only this PLATFORM HEADER BACKGROUND gets the burgundy/red treatment. Do not tint all the white platform cards red. Existing cyan/teal processing group and thin blue-gray borders may remain, harmonious with the new red header.
+Keep top-left "CEREBRO ETL" brand and subtitle exactly.
+
+TEXT TO PRESERVE:
+User: "사용자 · 접속 환경", "데이터 개발자", "작업 설계 · 변환 로직", "시스템 운영자", "실행 관리 · 장애 대응", "WEB CONSOLE", "웹 브라우저 접속", "별도 사용자 프로그램 설치 없이 작업".
+Sources: "데이터 소스", "DB", "원본 데이터", "로그 · 파일", "변경 · 수집", "HTTP", "외부 데이터", "비정형", "이미지 · 영상 · 음성".
+Dashboard: "통합 대시보드 · 운영 모니터링", "CDC · ETL · 워크플로우 실행 / 성공 / 실패", "CPU · 메모리 · 디스크", "위험 · 경고 알림".
+Workflow: "워크플로우", "CDC · ETL 실행 제어", "스케줄 관리".
+CDC: "CDC", "실시간 변경 데이터 반영", "처리 현황 · 지연 정보 · 로그 확인".
+ETL: "ETL", "데이터 파이프라인 설계 · 적재", "생성 wizard 및 수동 파이프라인 설계", "Python 및 코드 기반 파싱 · 변환".
+AI: "AI 어시스턴트", "작업 이해 · 오류 분석 지원", "자연어 질의 · 오류 원인 추정".
+Settings: "설정 · 운영 관리", "공통 운영 환경 관리", "연결정보 / 알림톡 관리", "GPT 설정 · 내부 / 외부 LLM".
+Destination: "적재 · 보관 대상", "타깃 DB", "정형 데이터 · 메타데이터", "파일 저장소", "비정형 원본 · 대용량 파일".
+Do NOT reintroduce the deleted ETL DB-to-DB/file/HTTP first row. No numbers, no footer, no on-premises badge, no extra copy. Deliver one beautifully balanced final PNG with accurate Korean typography.

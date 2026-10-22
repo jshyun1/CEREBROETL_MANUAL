@@ -1,0 +1,3 @@
+제작 방식: 내장 imagegen 도구로 v4 PNG의 좌측 상단 제목 글자색 편집
+최종 프롬프트:
+Edit this image with exactly ONE local change: recolor only the large top-left page title text 'CEREBRO ETL' from navy blue to a rich crimson red (#B51E34 or a matching deep red harmonious with the existing red Platform header). Keep the exact text, typeface, weight, size, position, and clean edges. Do not recolor the subtitle below it. The white 'CEREBRO ETL Platform' lettering inside the red banner stays white. Preserve every other pixel and element as closely as possible: all Korean wording, icons, arrows, borders, composition, dimensions, white backgrounds, and existing red Platform banner. No other changes. Output PNG.

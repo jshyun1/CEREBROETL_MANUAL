@@ -1,0 +1,85 @@
+제작 방식: 내장 imagegen 도구, 사용자 첨부 이미지를 참조한 편집
+최종 프롬프트 전문:
+Use case: infographic-diagram / style-transfer.
+Asset type: one finished Korean user-manual system architecture illustration.
+Input image: the user's latest attached CEREBRO ETL diagram is the EDIT TARGET and content reference. Redesign it according to the exact changes below. Preserve its brand text, feature grouping, and approved text, but use a visibly different graphic/UI style and a left-to-right composition. Produce a large, crisp landscape image, approximately 3200x2000 or larger suitable for reading Korean in a manual.
+
+DESIGN:
+Elegant contemporary editorial UI infographic: white and very pale warm-gray canvas, charcoal typography, restrained teal/emerald accent, thin neutral borders, rounded white cards, small tasteful line icons, generous whitespace, understated soft shadows. Avoid copying the reference's thick dark-blue card header bands. Use understated card titles with small accent lines/icons instead. Make Korean lettering exceptionally clear and large. No section numbers or numbered badges. Top-left brand MUST read exactly "CEREBRO ETL". Below retain subtitle "데이터의 흐름을 만들고, 연결하고, 운영하는 웹 기반 통합 플랫폼". Remove the top-right "온프레미스 사용 지원" badge completely; leave clean whitespace instead. No footer disclaimer.
+
+COMPOSITION:
+Read from LEFT TO RIGHT, with three broad vertical regions:
+LEFT about 20%: a user/access card on top and a data sources card below.
+CENTER about 62%: a large grouped container titled "CEREBRO ETL Platform", with the feature modules organized inside: full-width unified dashboard at top, full-width workflow beneath, CDC and ETL side by side beneath workflow, AI assistant and settings/operations side by side at bottom.
+RIGHT about 18%: destination/storage card vertically centered. Ensure generous room and readable text, increase canvas size if needed.
+Use ONLY TWO directional arrows in the whole diagram: left data-sources region → central platform and central platform → right storage region. Straight horizontal teal arrows, no branch arrows, no internal arrows. Access is communicated by grouping and text without an additional arrow.
+
+EXACT VISIBLE COPY AND GROUPS:
+TOP LEFT user card title: "사용자 · 접속 환경"
+- "데이터 개발자" with caption "작업 설계 · 변환 로직"
+- "시스템 운영자" with caption "실행 관리 · 장애 대응"
+- small access subcard "WEB CONSOLE"
+  "웹 브라우저 접속"
+  "별도 사용자 프로그램 설치 없이 작업"
+
+BOTTOM LEFT source card title: "데이터 소스"
+Four simple vertically stacked rows or small tiles:
+"DB" / "원본 데이터"
+"로그 · 파일" / "변경 · 수집"
+"HTTP" / "외부 데이터"
+"비정형" / "이미지 · 영상 · 음성"
+
+CENTER outer title exact "CEREBRO ETL Platform"
+Dashboard module: KEEP ALL its original content verbatim:
+"통합 대시보드 · 운영 모니터링"
+"CDC · ETL · 워크플로우 실행 / 성공 / 실패"
+"CPU · 메모리 · 디스크"
+"위험 · 경고 알림"
+These may wrap into clearly separated chips; do not omit any.
+Workflow module:
+title "워크플로우"
+body "CDC · ETL 실행 제어"
+body "스케줄 관리"
+Do NOT include "데이터 오케스트레이션", "선후행", or "병렬 구성".
+CDC module:
+title "CDC"
+subtitle "실시간 변경 데이터 반영"
+single body item "처리 현황 · 지연 정보 · 로그 확인"
+Do NOT include a wizard line or "변경 데이터의 지속적 타깃 반영".
+ETL module:
+title "ETL"
+subtitle "데이터 파이프라인 설계 · 적재"
+body items:
+"DB to DB · 파일 · HTTP · 비정형"
+"생성 wizard 및 수동 파이프라인 설계"
+"Python 및 코드 기반 파싱 · 변환"
+AI module:
+title "AI 어시스턴트"
+subtitle "작업 이해 · 오류 분석 지원"
+single body item "자연어 질의 · 오류 원인 추정"
+Do NOT include JOB 구성/처리 내용 설명 or 조치 방법/점검 항목 안내.
+Settings module:
+title "설정 · 운영 관리"
+subtitle "공통 운영 환경 관리"
+body items:
+"연결정보 / 알림톡 관리"
+"GPT 설정 · 내부 / 외부 LLM"
+Do NOT include email, 문자, 카카오 wording or the old 알림 규칙 관리 line.
+
+RIGHT storage card title "적재 · 보관 대상"
+Two vertically arranged tiles:
+"타깃 DB" / "정형 데이터 · 메타데이터"
+"파일 저장소" / "비정형 원본 · 대용량 파일"
+
+Do not add extra explanatory prose, extra engine/server architecture, logos, numbered labels, or extra arrows. Do not include "기능 기반 논리 구성도" or "실제 서버 및 엔진 배치와는 다를 수 있습니다". Preserve exact Korean spelling and all required feature content. Make the platform container the dominant visual region, with compact supporting side regions. Deliver one polished, complete image.
+
+최종 프롬프트 요약:
+좌측 상단 CEREBRO ETL 브랜드와 소개 문구를 유지하고, 좌측 사용자·웹 접속 환경 및 데이터 소스 → 중앙 CEREBRO ETL Platform → 우측 적재·보관 대상으로 배치한다.
+번호를 사용하지 않고 수평 방향 화살표 두 개만 표시한다. 두꺼운 네이비 헤더 대신 밝은 배경, 흰색 카드, 가는 테두리와 청록색 포인트를 활용한 새로운 UI 스타일을 적용한다.
+통합 대시보드의 실행·성공·실패, CPU·메모리·디스크, 위험·경고 알림 내용을 유지한다.
+워크플로우는 CDC·ETL 실행 제어와 스케줄 관리만 표시한다.
+CDC는 실시간 변경 데이터 반영과 처리 현황·지연 정보·로그 확인만 표시한다.
+ETL은 DB to DB·파일·HTTP·비정형, 생성 wizard 및 수동 파이프라인 설계, Python 및 코드 기반 파싱·변환을 표시한다.
+AI 어시스턴트는 작업 이해·오류 분석 지원, 자연어 질의·오류 원인 추정을 표시한다.
+설정·운영 관리는 연결정보 / 알림톡 관리와 GPT 설정·내부 / 외부 LLM을 표시한다.
+온프레미스 배지, 데이터 오케스트레이션, 선후행·병렬 구성, CDC 위자드와 지속적 타깃 반영 문구, JOB 구성 설명과 조치방법·점검항목 안내, 이메일·문자·카카오 문구 및 하단 구성도 면책 문구를 제외한다.

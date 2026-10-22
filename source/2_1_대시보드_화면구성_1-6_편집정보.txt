@@ -1,0 +1,53 @@
+대시보드 화면 구성 안내 이미지 편집 기준
+
+도구: built-in image_gen (imagegen 스킬)
+원본: 2_1_대시보드_전체_단계안내.png
+결과: 2_1_대시보드_화면구성_1-6.png
+
+번호와 영역
+1. CDC·ETL·Workflow 요약 카드 전체
+2. ETL·CDC 일별·시간대별 처리 추이 및 Top 5 차트 전체
+3. 당일·전일·조회 기간·검색 버튼
+4. CPU·메모리·디스크 사용 현황 카드 전체
+5. 위험·경고·정보 알림(조치 대기열)
+6. 주요 프로세스 현황
+
+스타일
+- 강조 테두리와 원형 번호 배지를 같은 빨간색(#E53935)으로 통일
+- 모든 번호는 같은 글꼴의 굵은 흰색 숫자로 통일
+- 각 번호는 한 번만 표시하고 해당 영역의 좌측 상단에 배치
+- UI의 글자·수치·버튼을 가리지 않도록 배치
+- 기존 메뉴·로그 버튼의 1~4번 표시는 제거
+- 원래 화면의 UI와 데이터는 유지하고 안내 표시만 변경
+
+최초 편집 프롬프트
+Use case: precise-object-edit.
+Asset type: screenshot annotation for a Korean software user manual.
+Edit target: the provided screenshot of the CEREBRO ETL dashboard.
+
+Replace ONLY the old tutorial annotations with six numbered region annotations. Preserve the complete original screenshot, all interface text, exact Korean glyphs, charts, data values, spacing, card shapes and layout. This must remain a faithful software screenshot, not a redesigned dashboard.
+
+First REMOVE every old annotation: the red 1 around the top Dashboard menu, orange 2 around the date filter, blue 3 around the summary cards, and ALL THREE green 4 badges/boxes around the Log buttons. Restore the underlying UI accurately. The top navigation menu and Log buttons must have no separate tutorial highlights.
+
+Then add exactly SIX badges, each numeral appearing ONCE, matching these areas in the ORIGINAL 1672 x 941 pixel coordinate system:
+1 — One rounded rectangular outline around ALL THREE CDC / ETL / Workflow summary cards together, approximately x=19, y=115 to x=1373, y=319.
+2 — One rounded rectangular outline around ALL FOUR chart panels together, approximately x=20, y=329 to x=1372, y=928. This includes ETL daily/hourly, ETL Job Top 5, CDC daily/hourly, and CDC Job Top 5.
+3 — One rounded rectangular outline around the DATE CONTROLS ONLY: today, yesterday, date range and search button at the upper right, approximately x=1253, y=59 to x=1651, y=107.
+4 — One rounded rectangular outline around the THREE RESOURCE CARDS together on the right: CPU, memory and disk, approximately x=1381, y=117 to x=1652, y=477.
+5 — One rounded rectangular outline around the ACTION QUEUE ALERT COUNTS ONLY (danger/warning/info pills), approximately x=1060, y=69 to x=1245, y=96. Do not combine it with the date controls.
+6 — One rounded rectangular outline around the MAIN PROCESS STATUS card on the lower right, approximately x=1381, y=487 to x=1652, y=928.
+
+Unify ALL annotation styling: every outline the SAME vivid brand red (#E53935), equal 3-pixel stroke, 8-pixel corner radius, no colored background fill. Every badge the SAME circular red fill (#E53935), about 34 pixels diameter, thin white rim, and the SAME bold WHITE numeral font, centered. All six numerals must be white, all six badge fills red, all six region outlines red. Place each badge at or just outside the upper-left corner of its region without covering any UI labels, buttons or data. Especially position badge 5 to the left of the alert pills so no alert text is covered.
+
+Exact added text: only "1", "2", "3", "4", "5", "6". No extra legend, titles, arrows, decorative elements, or repeated badges. Keep every UI element and the full screenshot boundaries visible, at the original wide aspect ratio, with crisp readable text.
+
+제목 가림을 방지하는 최종 위치 조정 프롬프트
+Use case: precise-object-edit. This is a very small positional correction to an already annotated software screenshot.
+Edit target: the attached image with six red outlined dashboard regions and red circles with white numerals.
+Change ONLY the positions of the CIRCULAR NUMBER BADGES 2 and 6. Keep every region outline, every other badge, all original UI text, numbers, values, graphs, panel dimensions, fonts, and the entire screenshot unchanged.
+
+The image is 1672 x 941 pixels. Badge 2 currently overlaps the first letters of the upper-left ETL chart title. Move ONLY badge 2 about 14 pixels UP: put its center at x=29, y=320, diameter 34 px. Its lower edge must be ABOVE the chart title text, leaving the FULL title "ETL 일별·시간대별 적재 건수" visible. Do not move the rectangle around the charts or alter that title.
+
+Badge 6 currently overlaps the first letters of the lower-right "주요 프로세스 현황" heading. Move ONLY badge 6 LEFT into the empty gutter, with center x=1367, y=488, diameter 34 px. That keeps the badge to the LEFT of the lower-right panel title. Restore the full heading "주요 프로세스 현황" where the old badge overlapped it. Do not move its enclosing rectangle, do not remove or alter any text, and do not cover any data.
+
+All six badges remain the exact same red circular shape and size, thin white rim and bold WHITE digits; all six region outlines remain the exact same red as before. Each numeral 1–6 appears once. No new symbols or text, no UI redesign, no other changes.
