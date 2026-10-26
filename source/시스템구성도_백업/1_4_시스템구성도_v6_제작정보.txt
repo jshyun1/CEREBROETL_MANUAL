@@ -1,0 +1,23 @@
+제작 방식: 내장 image_gen 이미지 편집 도구
+편집 원본: ../1_4_시스템구성도_v5.png
+결과 파일: ../1_4_시스템구성도_v6.png
+변경 내용: 오른쪽 적재·보관 대상 영역을 데이터 적재·전송 대상으로 변경. 데이터 저장소와 외부 연계 시스템으로 구성.
+원본 보존: v5 이미지 유지, 매뉴얼의 시스템 구성도 링크를 v6으로 변경.
+
+최종 프롬프트:
+Use case: text-localization.
+Asset type: CEREBRO ETL Korean system architecture diagram for a user manual.
+Input image 1 is the edit target. Edit ONLY the rightmost destination panel, currently titled "적재 · 보관 대상", containing two cards "타깃 DB" and "파일 저장소".
+Keep the original overall image dimensions, composition, left data-source panel, upper user-access panel, all arrows, center platform, every other Korean text, red CEREBRO ETL title and red Platform banner unchanged. Retain the thin blue outline, white background, pale blue card backgrounds and existing professional clean diagram style.
+
+Replace the rightmost destination panel with exactly these Korean labels:
+Outer panel heading: "데이터 적재·전송 대상"
+Top inner card heading: "데이터 저장소"
+Top inner card description, in two centered readable lines:
+"관계형 DB · NoSQL"
+"파일 · 클라우드 저장소"
+Bottom inner card heading: "외부 연계 시스템"
+Bottom inner card description: "메시지 시스템 · 외부 API"
+
+Use a compact yet clearly legible heading font that fits inside the existing right panel, wrapping the outer heading into two lines if necessary. Keep all text comfortably inside its card with balanced spacing. For the top card use the existing blue database/storage icon or a closely matching storage icon. Replace the bottom folder icon with a matching blue connected-systems/network icon to represent external integration. Replace the small outer heading database icon with a matching blue/teal outgoing-data or destination icon if needed.
+Do not keep the obsolete text "타깃 DB", "파일 저장소", "정형 데이터 · 메타데이터", or "비정형 원본 · 대용량 파일" anywhere in this rightmost panel. Make no additions or changes elsewhere. High quality crisp Korean typography, PNG, opaque background.
